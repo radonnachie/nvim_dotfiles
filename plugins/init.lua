@@ -11,4 +11,15 @@ return {
     },
     config = function() require "custom.plugins.neo-tree" end,
   },
+  ["mrjones2014/smart-splits.nvim"] = {
+    module = "smart-splits",
+    cmd = "SmartSplits",
+    ignored_filetypes = {
+      "nofile",
+      "quickfix",
+      "qf",
+      "prompt",
+    },
+    ignored_buftypes = { "nofile" },
+  }
 }
